@@ -1,0 +1,21 @@
+{
+  "name": "push-demo",
+  "version": "1.0.0",
+  "description": "test web push",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "push"
+  ],
+  "author": "Felix Liu <felix_liu@outlook.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4",
+    "web-push": "^1.0.2"
+  },
+  "devDependencies": {
+    "morgan": "^1.6.1"
+  }
+}
