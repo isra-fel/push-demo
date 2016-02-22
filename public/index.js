@@ -7,12 +7,9 @@ navigator.serviceWorker.register('push-worker.js').then(function (registration) 
     endpoint = subscription.endpoint;
 });
 document.getElementById('magic').addEventListener('mouseup', function (e) {
-    // fetch('./sendNotification?endpoint=' + endpoint, {
-    //     method: 'post'
-    // });
-    var xhr = new XMLHttpRequest();
-    xhr.open('post', '/sendNotification?endpoint=' + endpoint);
-    xhr.send();
+    fetch('./sendNotification?endpoint=' + endpoint, {
+        method: 'post'
+    });
 }, false);
 console.log('addEventListener');
 //# sourceMappingURL=index.js.map

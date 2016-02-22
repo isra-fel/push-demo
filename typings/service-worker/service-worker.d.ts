@@ -85,7 +85,7 @@ declare interface ExtendableEvent extends Event {
     /**
      * Extends the lifetime of the event.  It is intended to be called in the install EventHandler for the installing worker and on the active EventHandler for the active worker.
      */
-    waitUntil(foo: () => PromiseLike<any>): any
+    waitUntil(promise: PromiseLike<any>): any
 }
 
 declare interface Navigator {
